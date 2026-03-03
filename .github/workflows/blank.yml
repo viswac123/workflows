@@ -1,6 +1,8 @@
 name: viswa first CI/CD
 on:
    push
+env:
+  print_test: Viswa is working on the Github Action
 jobs:
   call-template-job:
     uses: ./.github/workflows/reuse-template.yml
@@ -8,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: call-template-job
     steps:
-      - run: echo 'test'
+      - run: echo '$print_test'
 
   
 
