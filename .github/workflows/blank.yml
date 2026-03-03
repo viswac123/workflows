@@ -1,8 +1,6 @@
 name: viswa first CI/CD
 on:
    push:
-   schedule:
-      - cron: *****
    workflow_dispatch:
    inputs:
       environment: string
