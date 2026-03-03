@@ -1,12 +1,9 @@
 name: viswa first CI/CD
 on:
    push
-   
 jobs:
-  job1:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: ./.github/workflows/reuse-template.yml
+  call-template-job:
+    uses: ./.github/workflows/reuse-template.yml
 
         
        
