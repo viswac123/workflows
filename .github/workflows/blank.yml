@@ -1,14 +1,10 @@
 name: viswa first CI/CD
 on:
    push:
-   workflow_dispatch:
-   inputs:
-      environment: string
 jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: viswa-checkout
-        runs: echo 'This is testing'
+      - run: echo 'This is testing'
         
        
