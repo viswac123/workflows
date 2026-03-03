@@ -1,0 +1,9 @@
+name: reuse-template
+on:
+  workflow_call:
+
+jobs:
+  reuse-job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'This is reuse template'
