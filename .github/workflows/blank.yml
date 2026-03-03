@@ -1,8 +1,6 @@
 name: viswa first CI/CD
 on:
    push
-env:
-  print_test: Viswa is working on the Github Action
 jobs:
   call-template-job:
     uses: ./.github/workflows/reuse-template.yml
