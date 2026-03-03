@@ -11,6 +11,7 @@ jobs:
     needs: call-template-job
     steps:
       - run: echo "${{ env.print_test }}"
+      - run: echo "${{ env.print_test }}"
 
   
 
