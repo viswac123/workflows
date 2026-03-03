@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: call-template-job
     steps:
-      - run: echo '$print_test'
+      - run: echo "$print_test"
 
   
 
